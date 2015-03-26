@@ -1,0 +1,17 @@
+{
+  "name": "webp",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-webp": "^2.2.0",
+    "imagemin-jpegtran": "^4.1.0",
+    "napa": "^1.2.0"
+  },
+  "scripts": {
+    "install": "napa"
+  },
+  "napa": {
+    "modernizr": "http://modernizr.com/downloads/modernizr-latest.js"
+  }
+}

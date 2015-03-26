@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Based on https://css-tricks.com/perfect-full-page-background-image/ */
+
+.image {
+  position: fixed; 
+  left: -50%; 
+  width: 200%; 
+  height: 598px;
+  z-index: -10000;
+}
+
+img {
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin: 0 auto; 
+  min-width: 50%;
+}

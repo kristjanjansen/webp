@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+  
+.image {
+  width: 100%;
+  height: 598px;
+  background-position: center;
+  background-size: cover;
+}
+
+.webp .image {
+  background-image: url('webp/image_q70.webp')
+}
+
+.no-webp .image {
+  background-image: url('jpgo/image_q70.jpg')
+}

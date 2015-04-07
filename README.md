@@ -20,9 +20,19 @@ Summary:
 
 ### WebP to JPG Fallback
 
-Demo:
 
-http://188.166.28.228/webp/index_image.html
+Two fallback methods are analyzed
+
+#### Using <img> HTML tag
+
+Demo: http://188.166.28.228/webp/index_image.html
+
+The fallback uses [https://css-tricks.com/webp-with-fallback](onerror) hack to fall back to JPG if browser does not support WebP. The image centering and scaling approach is based on [https://css-tricks.com/perfect-full-page-background-image](Perfect Full Page Background Image) article.
+
+#### Using background-image CSS property
+
+The fallback uses Modernizr test to detect the WebP support and switches the ```background-image``` property url to either WebP or JPG. The image centering and scaling uses ```background-position: center``` and ```background-size: cover``` properties.
+
 http://188.166.28.228/webp/index_background.html
 
 |Browser|```img``` load|```img``` display|```background-image``` load|```background-image``` display|

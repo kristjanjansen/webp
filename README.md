@@ -26,12 +26,14 @@ http://188.166.28.228/webp/index_image.html
 http://188.166.28.228/webp/index_background.html
 
 |Browser|```img``` load|```img``` display|```background-image``` load|```background-image``` display|
-|-------------|---------|--------------|---------------|------------------|
-|Chrome       |WebP     |WebP          |WebP           |WebP              |
-|FF           |WebP     |WebP          |WebP           |WebP              |
-|Safari       |WebP+JPG |JPG           |JPG            |JPG               |
-|Safari mobile|WebP+JPG |JPG           |JPG            |JPG               |
-|Opera Mini   |WebP     |WebP          |WebP           |WebP unscaled     |
+|-------------|----------|--------------|---------------|------------------|
+|Chrome       |WebP      |WebP          |WebP           |WebP              |
+|FF           |WebP      |WebP          |WebP           |WebP              |
+|Safari       |WebP+JPG  |JPG           |JPG            |JPG               |
+|Safari mobile|WebP+JPG  |JPG           |JPG            |JPG               |
+|Opera Mini   |WebP      |WebP          |WebP           |WebP unscaled     |
+|IE9          |WebP+JPG  |JPG           |JPG            |JPG               |
+|IE8          |WebP?+JPG |JPG           |JPG            |JPG               |
 
 ### Using custom image
 

@@ -23,17 +23,19 @@ Summary:
 
 Two fallback methods are analyzed
 
-#### Using <img> HTML tag
+#### Using img HTML tag
 
 Demo: http://188.166.28.228/webp/index_image.html
 
-The fallback uses [https://css-tricks.com/webp-with-fallback](onerror) hack to fall back to JPG if browser does not support WebP. The image centering and scaling approach is based on [https://css-tricks.com/perfect-full-page-background-image](Perfect Full Page Background Image) article.
+The fallback uses [onerror](https://css-tricks.com/webp-with-fallback) hack to fall back to JPG if browser does not support WebP. The image centering and scaling approach is based on [Perfect Full Page Background Image](https://css-tricks.com/perfect-full-page-background-image) article.
 
 #### Using background-image CSS property
 
-The fallback uses Modernizr test to detect the WebP support and switches the ```background-image``` property url to either WebP or JPG. The image centering and scaling uses ```background-position: center``` and ```background-size: cover``` properties.
+Demo: http://188.166.28.228/webp/index_background.html
 
-http://188.166.28.228/webp/index_background.html
+The fallback uses Modernizr test to detect the WebP support and switches the ```background-image``` property url to either WebP or JPG. The image cropping, centering and scaling uses ```background-size: cover``` property.
+
+#### Browser behaviour
 
 |Browser|```img``` load|```img``` display|```background-image``` load|```background-image``` display|
 |-------------|----------|--------------|---------------|------------------|
@@ -44,6 +46,11 @@ http://188.166.28.228/webp/index_background.html
 |Opera Mini   |WebP      |WebP          |WebP           |WebP unscaled     |
 |IE9          |WebP+JPG  |JPG           |JPG            |JPG               |
 |IE8          |WebP?+JPG |JPG           |JPG            |JPG               |
+
+Summary:
+* Although Opera Mini Modernizr tests can not be trusted, it supports WebP with no problems. Image scaling / centering needs extra work.
+* img fallback works but causes browsers to load **both** WebP and JPG that renders the method pretty useless.
+* background-image fallback works best but can cause issues with production / content side.
 
 ### Using custom image
 

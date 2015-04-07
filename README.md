@@ -50,7 +50,7 @@ The fallback uses Modernizr test to detect the WebP support and switches the ```
 Summary:
 * Although Opera Mini Modernizr tests can not be trusted, it supports WebP with no problems. Image scaling / centering needs extra work.
 * img fallback works but causes browsers to load **both** WebP and JPG that renders the method pretty useless.
-* background-image fallback works best, but injecting CSS for content / CMS integration can be troublesome.
+* background-image fallback works best but making it work with content / CMS integration can be troublesome.
 
 ### Using custom image
 

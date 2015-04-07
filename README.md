@@ -20,8 +20,10 @@ Summary:
 
 ### WebP to JPG Fallback
 
-Open ```/index_image.html``` and ```/index_background.html``` to compare img and background-image based methods for displaying WebP images with JPG fallback.
+Demo:
 
+http://188.166.28.228/webp/index_image.html
+http://188.166.28.228/webp/index_background.html
 
 |Browser|```img``` load|```img``` display|```background-image``` load|```background-image``` display|
 |-------------|---------|--------------|---------------|------------------|

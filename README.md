@@ -21,7 +21,7 @@ Summary:
 ### WebP to JPG Fallback
 
 
-Two fallback methods are analyzed
+Three fallback methods are analyzed
 
 #### Using img HTML tag
 
@@ -35,17 +35,21 @@ Demo: http://188.166.28.228/webp/index_background.html
 
 The fallback uses Modernizr test to detect the WebP support and switches the ```background-image``` property url to either WebP or JPG. The image cropping, centering and scaling uses ```background-size: cover``` property.
 
+#### Using picture tag with mimetype
+
+Using the ```picture``` and ```source``` tags with ```scrset``` and ```type``` attributes combined with http://scottjehl.github.io/picturefill polyfill.
+
 #### Browser behaviour
 
-|Browser|```img``` load|```img``` display|```background-image``` load|```background-image``` display|
-|-------------|----------|--------------|---------------|------------------|
-|Chrome       |WebP      |WebP          |WebP           |WebP              |
-|FF           |WebP      |WebP          |WebP           |WebP              |
-|Safari       |WebP+JPG  |JPG           |JPG            |JPG               |
-|Safari mobile|WebP+JPG  |JPG           |JPG            |JPG               |
-|Opera Mini   |WebP      |WebP          |WebP           |WebP unscaled     |
-|IE9          |WebP+JPG  |JPG           |JPG            |JPG               |
-|IE8          |WebP?+JPG |JPG           |JPG            |JPG               |
+|Browser|```img``` load|```img``` display|```background-image``` load|```background-image``` display|```picture``` load|```picture``` display|
+|-------------|----------|-----|-----|-----|-----|-----|
+|Chrome       |WebP      |WebP |WebP |WebP |WebP |WebP |
+|FF           |WebP      |WebP |WebP |WebP |WebP |WebP |
+|Safari       |WebP+JPG  |JPG  |JPG  |JPG  |JPG  |JPG  |
+|Safari mobile|WebP+JPG  |JPG  |JPG  |JPG  |JPG  |JPG  |
+|Opera Mini   |WebP      |WebP |WebP |WebP |WebP |WebP |
+|IE9          |WebP+JPG  |JPG  |JPG  |JPG  |JPG  |JPG  |
+|IE8          |WebP?+JPG |JPG  |JPG  |JPG  |-    |-    |
 
 Summary:
 * Although Opera Mini Modernizr tests can not be trusted, it supports WebP with no problems. Image scaling / centering needs extra work.

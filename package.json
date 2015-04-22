@@ -6,7 +6,8 @@
     "gulp": "^3.8.11",
     "gulp-webp": "^2.2.0",
     "imagemin-jpegtran": "^4.1.0",
-    "napa": "^1.2.0"
+    "napa": "^1.2.0",
+    "picturefill": "^2.3.1"
   },
   "scripts": {
     "install": "napa"

@@ -64,3 +64,7 @@ Install NodeJS, global Gulp and Imagemagick, replace ```/original/image.jpg``` w
     ./convert.sh
     gulp
 
+### Links
+
+http://davidwalsh.name/webp-images-performance
+

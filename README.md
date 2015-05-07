@@ -5,7 +5,7 @@ There are huge bandwith wins while using WebP format but the backward compatibil
 
 ### File sizes
 
-See the pretty graphs here: https://docs.google.com/a/africainternetgroup.com/spreadsheets/d/1Iei30caChc91mrKBGZrNs32Ermq8JzkFS23JacPJbQs/edit?usp=sharing
+See the graphs here: https://docs.google.com/spreadsheets/d/1w9VlLTgPpfhrRIzKuLCtWtrSeV5kUm4rXLD5DyKrKEg/edit#gid=0
 
 |                 |JPG quality 99 |JPG quality 90 |JPG quality 80 |JPG quality 70 |
 |-----------------|---------------|---------------|---------------|---------------|
